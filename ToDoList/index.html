@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h1>To Do List</h1>
+            </div>
+        </div>
+        <div class="well">
+            <h2>Enter Your To Do's</h2>
+            <div class="form-group form-inline">
+                <input type="text" id="info" placeholder="Get Milk" />
+                <input type="hidden" id="index" />
+                <button id="add-button" class="btn btn-primary form-control" onclick="toDoApp.create()">Submit</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>To Do</th>
+                    </tr>
+                </thead>
+                <tbody id="output">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+</html>
